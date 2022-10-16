@@ -1,0 +1,172 @@
+whop push UB 
+
+MATIC-USDT SHORT
+stopped
+Entry: $.735 - $.734
+SL: $.7577
+
+TP1: $.7015 (1.5R)
+TP2: $.6851 (2.23R)
+TP3: $.6619 (3.26R
+
+Notes: Deviation above diagonal with a key S&R reclaim. Should see continuation immediately so I will manually close if things reverse. I will update if/when I close early. 
+
+Chart: https://www.tradingview.com/x/kWKKZSXW/
+https://www.tradingview.com/x/bYWKQkoT/
+"""
+s = """
+
+
+whop push UB 
+CLOSED AT ENTRY
+ATOM-USDT SHORT
+
+Entry: $14.735 - $14.7
+SL: $15.46
+
+TP1: $13.645 (1.5R)
+TP2: TBD (R)
+TP3: TBD (R)
+
+Notes: Fading this pop. Will update TPs later. 
+
+Chart: https://www.tradingview.com/x/FwnPn4pJ/
+
+@everyone 
+
+
+"""
+s = """==
+
+
+
+whop push UB 
+
+EGLD-USDT SHORT
+
+Entry: $54.15 - $54.60
+SL: $56.75
+
+TP1: $50.25 (1.5R)
+TP2: $47.65 (2.5R)
+TP3: $44.65 (3.65R)
+
+Notes: Underside retest of 8d consolidation period. Reclaim and I have a clean invalidation way before my SL placement. Very hesitant to take this position due to the strength it showed while crypto was bleeding down last week. Discussed this on stream with Pierre more in detail. Essentially, price consolidated for an extended period of time and broke the consolidation support. It would be a massive sign of strength for it to reclaim on the 1st attempt. 
+
+No continued squeeze alongside BTC & ETH after the initial pop. EGLD is stalling where it should, must reject here or I cut. I will share if/when I cut early. 
+
+Chart: https://www.tradingview.com/x/hPcZ2k0L/
+
+@everyone
+
+"""
+s = """=
+
+
+
+whop push UB 
+
+ADA-USDT LONG
+
+Entry: .497 - .498
+SL: .4879 - .489 OR h1 close below the local low (circled) STOPPED OUT
+
+TP1: .5107 (1.51R)
+TP2: .5285(3.46R)
+TP3: TBD going to sleep and want to post
+
+Notes: Directly contradicting myself and what I said about fresh positions and CPI volatility but I really can’t pass up ADA. Either the low is in now or… it’s not and I’ll be stopped :megadab:.The manual stop is for those who will be actively watching and want to save a bit on the SL. Going to sleep and will check back in a few hours. 
+
+Will determine TP3 when I’m awake.  GL
+
+
+"""
+s = """=
+
+
+
+whop push UB 
+
+ATOM-USDT Short
+CLOSED AT ENTRY
+Entry: 15.5 - 15.44 
+SL: 16.06
+
+TP1: 14.49 (1.66R)
+TP2: 14.045 (2.42R)
+TP3: 13.37 (3.56R)
+
+Notes: Failed deviation below the lows. I’m playing this impulse - if I’m correct there is no need to get above the diagonal again. TPs are based on previous consolidation periods before a move up. 
+
+80% out by TP2. 
+
+Chart: https://www.tradingview.com/x/pMNuEd3V/
+"""
+s = """=
+
+
+whop push UB 
+
+TRB-USDT LONG
+CLOSED AT ENTRY
+Entry: 17.07 - $17.17
+SL: 15.985 
+
+TP1: 18.925 (1.71R)
+TP2: 20.315 (2.99R)
+TP3: 22.985 (5.45R)
+
+Notes: H1 S/R flip. LTF deviation + reclaim of lows. In general, there hasn’t been much relief from TRB since the massive selloff. That could mean a few things but what I’m focusing on is the potential that the last few days of PA has been accumulation. Also, if TRB gets moving again, it could run fairly quickly due to little support on the way down. 
+
+I’ll have 20% remaining open after TP3. SL, TPs, etc may change as the trade progresses
+
+"""
+s = """=
+
+whop push UB 
+
+MATIC - USDT Short @everyone 
+
+compound existing position/fresh position opportunity
+
+Entry: .85 - .847
+SL: .8823
+
+TP1: .7870 (1.73R)
+TP2: .7681 (2.27R)
+TP3: .7492 (2.83R)
+
+Will leave 20% open after TP3. 
+
+Notes: For those already in the short, this will bring down your avg entry. The SL for the main trade can be moved to .888. Underside retest of previous highs that led to local top. Clear S&R similar to the first trade. 
+
+Chart: https://www.tradingview.com/x/lNKu8E4M/ 
+
+"""
+s = """"""
+s = """
+whop push UB 
+
+MATIC - USDT Short @everyone 
+
+Entry: .895 - .888
+SL: .9238 MOVED TO .888
+TP1: .8506 (1.53R) ✅  TP1 HIT 
+TP2: .8295 (2.26R) ✅ TP2 HIT
+TP3: .7492 (5.04R)
+
+Will leave 20% open after TP3. 
+
+Notes: Clean Range after breaking the HTF Range to the upside. TP1 & TP2 is focused on scaling out before breaking back within the HTF Range. Spike above the highs and hard rejection with the rest of the market makes this a comfy SL placement - quite clear invalidation. 
+
+This is one that I would close early if Bitcoin grinds right back up to the highs after the most recent rejection. My goal of these trades is to not get chopped up, I may have to enter & exit a few at BE or close to BE before catching a move.
+
+May not get filled at the upper end of the Range. If that happens, TP2 = TP1. I’ll adjust the numbers if the upper range doesn’t get filled. 
+
+Chart: https://www.tradingview.com/x/6ouefZM5/ 
+
+
+"""
+s = """==
+
+

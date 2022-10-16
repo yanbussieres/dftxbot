@@ -1,10 +1,11 @@
 import requests
 import websocket
 import json
-
+from datetime import datetime
 import threading
 import time
 import random
+import parser
 
 # To be replaced.
 CHANNEL_ID = "CHANNEL_ID"
@@ -113,9 +114,15 @@ def main():
 
         if is_MESSAGE_CREATE_type(event):
             latest_message = get_latest_message(latest_message)
-            # send message
-            print(latest_message["content"])
-    # print(latest_message)
+
+        with open("myfile.txt", "w") as file1:
+            # Writing data to a file
+            file1.write(
+                f'\n{datetime.utcnow().isoformat()}   ::::  INITIAL MESSAGE:\n{latest_message["content"]}\n'
+            )
+            file1.write(
+                f'\n{datetime.utcnow().isoformat()}) {parser.parse_message(print(latest_message["content"]))}'
+            )
 
 
 if __name__ == "__main__":
