@@ -30,7 +30,17 @@ def parse_message(initial_message: str) -> str:
             other_currency = word.split("usdt")[0]
             other_currency_cleaned = re.sub("[A-Z]", "", other_currency)
             other_currency_upper = other_currency_cleaned.upper()
-            currencies = f"{other_currency_upper}-USDT"
+            currencies = f"{other_currency_upper}-PERP"
+        elif "busd" in word:
+            other_currency = word.split("busd")[0]
+            other_currency_cleaned = re.sub("[A-Z]", "", other_currency)
+            other_currency_upper = other_currency_cleaned.upper()
+            currencies = f"{other_currency_upper}-PERP"
+        elif "usdc" in word:
+            other_currency = word.split("usdc")[0]
+            other_currency_cleaned = re.sub("[A-Z]", "", other_currency)
+            other_currency_upper = other_currency_cleaned.upper()
+            currencies = f"{other_currency_upper}-PERP"
 
     if entry_line.find("short") != -1:
         short_or_long = "short"
@@ -75,12 +85,13 @@ def parse_message(initial_message: str) -> str:
 
 
 def writter_helper(helper_message, initial_message):
-    with open("myfile.txt", "a") as file1:
+    print("VOID")
+    # with open("myfile.txt", "a") as file1:
 
-        file1.write(
-            f"\n{datetime.utcnow().isoformat()}   ::::  INITIAL MESSAGE:\n{initial_message}"
-        )
-        file1.write(
-            f"\n{datetime.utcnow().isoformat()}) ::::: PARSED MESSAGE: {parse_message(helper_message)}\n\n"
-        )
+    #     file1.write(
+    #         f"\n{datetime.utcnow().isoformat()}   ::::  INITIAL MESSAGE:\n{initial_message}"
+    #     )
+    #     file1.write(
+    #         f"\n{datetime.utcnow().isoformat()}) ::::: PARSED MESSAGE: {parse_message(helper_message)}\n\n"
+    #     )
     # Writing data to a file

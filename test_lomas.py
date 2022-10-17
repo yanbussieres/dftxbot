@@ -11,7 +11,7 @@ Still think longs are decent bets here but not going to take anything overnight.
 """,
     """
 
-@everyone Trade 26: RSRUSDT - SHORT
+@everyone Trade 26: RSRBUSD - SHORT
 
 Entry: 0.008561
 Size: $170K (size restriction + hasn’t actually broken down)
