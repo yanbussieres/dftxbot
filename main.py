@@ -5,12 +5,11 @@ from datetime import datetime
 import threading
 import time
 import random
+
 import parser
 
 # To be replaced.
-CHANNEL_ID = "CHANNEL_ID"
-TOKEN = "TOKEN"
-BASE_API = "https://discord.com/api/v9"
+
 
 ### WEBSOCKET
 def send_json_request(ws, request):
