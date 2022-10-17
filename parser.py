@@ -14,13 +14,13 @@ def parse_message(initial_message: str) -> str:
     ]
 
     if len(entry_line_list) == 0:
-        writter_helper(f"entry_line_list cant be found for message", initial_message)
+        writter_helper(initial_message, f"entry_line_list cant be found for message")
         return
 
     elif len(entry_line_list) > 1:
         writter_helper(
-            "entry_line_list has more then one lines cant be found for message",
             initial_message,
+            "entry_line_list has more then one lines cant be found for message",
         )
         return
 
@@ -49,8 +49,8 @@ def parse_message(initial_message: str) -> str:
     else:
 
         writter_helper(
-            "short or long not catched, here is the entry_line: {entry_line}",
             initial_message,
+            "short or long not catched, here is the entry_line: {entry_line}",
         )
         return
 
@@ -59,11 +59,11 @@ def parse_message(initial_message: str) -> str:
     if len(maybe_entry_prices_line) == 1:
         entry_prices = next(line for line in lines if line.startswith("entry"))
     elif maybe_entry_prices_line:
-        writter_helper("multiple ENTRY PRICE found for message", initial_message)
+        writter_helper(initial_message, "multiple ENTRY PRICE found for message")
         return
 
     else:
-        writter_helper("Enttry price not found", initial_message)
+        writter_helper(initial_message, "Enttry price not found")
         return
 
     prices = re.findall(r"\d.+", entry_prices)[0].split("-")
@@ -74,7 +74,7 @@ def parse_message(initial_message: str) -> str:
     elif len(prices) == 1:
         price = float(prices[0].replace(",", ""))
     else:
-        writter_helper("Problem with prices", initial_message)
+        writter_helper(initial_message, "Problem with prices")
         return
 
     price = round(price, 4)
@@ -85,13 +85,11 @@ def parse_message(initial_message: str) -> str:
 
 
 def writter_helper(helper_message, initial_message):
-    print("VOID")
-    # with open("myfile.txt", "a") as file1:
+    with open("loma_logs.txt", "a") as file1:
 
-    #     file1.write(
-    #         f"\n{datetime.utcnow().isoformat()}   ::::  INITIAL MESSAGE:\n{initial_message}"
-    #     )
-    #     file1.write(
-    #         f"\n{datetime.utcnow().isoformat()}) ::::: PARSED MESSAGE: {parse_message(helper_message)}\n\n"
-    #     )
-    # Writing data to a file
+        file1.write(
+            f"\n{datetime.utcnow().isoformat()}   ::::  INITIAL MESSAGE:\n{initial_message}"
+        )
+        file1.write(
+            f"\n{datetime.utcnow().isoformat()}) ::::: POSSIBLE PARSED MESSAGE: {helper_message})\n\n"
+        )

@@ -1,17 +1,23 @@
+import os
 import requests
 import websocket
+
 import json
 from datetime import datetime
 import threading
 import time
 import random
 
-import parser
+from parser import parse_message
 
 # To be replaced.
-
-
 ### WEBSOCKET
+
+CHANNEL_ID = "ID"
+TOKEN = "TOKEN"
+BASE_API = "https://discord.com/api/v9"
+
+
 def send_json_request(ws, request):
     ws.send(json.dumps(request))
 
@@ -82,7 +88,6 @@ def get_latest_message(latest_message):
         response = requests.request("GET", url, headers=headers)
 
         return json.loads(response.content)[0]
-
     else:
         f"{url}&after?={latest_message}"
         response = requests.request("GET", url, headers=headers)
@@ -90,10 +95,8 @@ def get_latest_message(latest_message):
 
 
 def main():
-
     ws = websocket.WebSocket()
     ws.connect("wss://gateway.discord.gg/?v=6&encoding=json")
-
     send_json_request(ws, payload)
 
     class BackgroundTasksKeepWSalive(threading.Thread):
@@ -108,20 +111,18 @@ def main():
 
     latest_message = None
 
+    event: dict = receive_json_response(ws)
     while True:
-        event: dict = receive_json_response(ws)
 
         if is_MESSAGE_CREATE_type(event):
-            latest_message = get_latest_message(latest_message)
 
-        with open("myfile.txt", "w") as file1:
-            # Writing data to a file
-            file1.write(
-                f'\n{datetime.utcnow().isoformat()}   ::::  INITIAL MESSAGE:\n{latest_message["content"]}\n'
-            )
-            file1.write(
-                f'\n{datetime.utcnow().isoformat()}) {parser.parse_message(print(latest_message["content"]))}'
-            )
+            latest_message = get_latest_message(latest_message)
+            print(latest_message["content"])
+            parsed_latest_message = parse_message(latest_message["content"])
+            if parsed_latest_message:
+                x = f"docker exec {parsed_latest_message}"
+                print(x)
+                os.system("ls")
 
 
 if __name__ == "__main__":
