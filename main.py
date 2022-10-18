@@ -12,7 +12,6 @@ from parser import parse_message
 # To be replaced.
 ### WEBSOCKET
 
-
 BASE_API = "https://discord.com/api/v9"
 
 
@@ -22,6 +21,7 @@ def send_json_request(ws, request):
 
 def receive_json_response(ws):
     response = ws.recv()
+    print(response)
     if response:
         return json.loads(response)
 
@@ -29,9 +29,9 @@ def receive_json_response(ws):
 payload = {
     "op": 2,
     "d": {
-        "token": "MTAyNTkzMTAyOTIyNTE2MDcwNA.G4xYGF.g1d_7l-pcUfcyctfTclGZbmSkYvwg2v1p19X1M",
+        "token": TOKEN,
         "intents": 512,  # or 513 for all ?
-        "properties": {"os": "linux", "browser": "chrome", "device": "pc"},
+        "properties": {"$os": "linux", "$browser": "chrome", "$device": "pc"},
     },
 }
 
@@ -110,15 +110,15 @@ def main():
 
     while True:
         event: dict = receive_json_response(ws)
+        if event:
+            if is_MESSAGE_CREATE_type(event):
 
-        if is_MESSAGE_CREATE_type(event):
-
-            latest_message = get_latest_message(latest_message)
-            print(latest_message["content"])
-            parsed_latest_message = parse_message(latest_message["content"])
-            if parsed_latest_message:
-                x = f"docker exec {parsed_latest_message}"
-                os.system("ls")
+                latest_message = get_latest_message(latest_message)
+                print(latest_message["content"])
+                parsed_latest_message = parse_message(latest_message["content"])
+                if parsed_latest_message:
+                    x = f"docker exec {parsed_latest_message}"
+                    os.system("x")
 
 
 if __name__ == "__main__":

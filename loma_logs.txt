@@ -8,3 +8,13 @@ entry_line_list cant be found for message
 entry_line_list cant be found for message
 2022-10-17T23:48:49.465128) ::::: POSSIBLE PARSED MESSAGE: hkj)
 
+
+2022-10-18T00:01:44.229953   ::::  INITIAL MESSAGE:
+entry_line_list cant be found for message
+2022-10-18T00:01:44.229967) ::::: POSSIBLE PARSED MESSAGE: hklh)
+
+
+2022-10-18T00:03:03.817046   ::::  INITIAL MESSAGE:
+GIVEN ORDER!!!!! : 
+2022-10-18T00:03:03.817058) ::::: POSSIBLE PARSED MESSAGE: frostybot trade:test:short symbol=RSR-PERP price=0.0086)
+
